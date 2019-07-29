@@ -1,0 +1,232 @@
+1. Question
+
+function thehightestnumber(zirr){
+    return Math.max (...zirr)
+}
+
+var zirr = [1,2,3,4,5,6,7,8,9];
+console.log(thehightestnumber(zirr));
+
+
+
+
+
+2. Question
+
+function kelimelerisay(kelimeler){
+
+return kelimeler.split(" ").length;
+
+}
+
+var kelimeler="ben felegin carkina comak sokarim";
+
+console.log(kelimelerisay(kelimeler));
+
+
+
+
+
+
+3.Question
+
+function countLetters(wanted, arrayString) {
+    let newArr = arrayString.join('').split('');
+    console.log(newArr);
+    let count = 0;
+    for (let i = 0; i < newArr.length; i++) {
+        if (newArr[i] === wanted)
+            count++;
+    }
+    return count;
+ }
+ console.log(countLetters('e', ['emek', 'ekrem',]));
+
+
+
+
+
+
+
+
+Simple Algorithm
+
+1-
+
+function reverseText(string){
+
+    var letterArray=[];
+    var reverseString;
+    for(var i=0; i< string.length; i++){
+        letterArray.unshift(string[i]);
+    }
+    reverseString = letterArray.join('');
+    return reverseString;
+}
+
+var string="Hello-World!";
+console.log(reverseText(string));
+
+
+
+
+
+2-
+
+
+
+function tersideaynimi(kelimeler){
+
+    var harfDizisi =[];
+    var taklaattir;
+    
+for (var i=0; i<kelimeler.length; i++){
+
+harfDizisi.unshift(kelimeler[i]);
+
+
+}
+
+taklaattir=harfDizisi.join('');
+
+if (kelimeler===taklaattir)
+    return true;
+
+    else
+
+    return false;
+}
+
+
+console.log(tersideaynimi('kayak'));
+
+
+
+
+
+3-
+
+function fizzbuzz (sayilar){
+   
+    var fizzcidayi=[];
+    for (var i=1; i<=sayilar; i++){
+        if (i%3===0 && i%2===0 )
+        fizzcidayi.push('fizzbuzz');
+
+       else if (i%2===0)
+        fizzcidayi.push('fizz');
+
+       else if (i%3===0)
+        fizzcidayi.push('buzz');
+        
+        
+
+        else fizzcidayi.push(i);
+    }
+
+        return fizzcidayi;
+
+
+}
+
+console.log(fizzbuzz(6))
+
+
+
+
+
+
+4-
+
+function taklacidegerler(taklamatik) {
+
+    var matiktakla=[];
+
+    for (var i=taklamatik.length-1; i>=0; i-- ){
+
+        matiktakla.push(taklamatik[i]);
+    }
+    return matiktakla;
+}
+
+var a =[22, 'hi', 12];
+console.log (taklacidegerler(a));
+
+
+
+
+
+
+
+5-
+
+
+function wordReverse(string1) {
+    var revString = string1.split(' ');
+    var newString=[];
+   
+    for (var i = 0; i < revString.length; i++) {
+        
+        let yeni = revString[i].split('');
+        
+        let rewWord = yeni.reverse().join('');
+        newString.push(rewWord);
+       
+    }
+ return newString;
+ }
+ console.log(wordReverse('I love Javascript!'));
+
+
+
+
+
+
+6-
+
+
+
+function capitalizeWords(input) {
+   let wordInput = input.split(' ');
+   console.log(wordInput);
+   for (let i = 0; i < wordInput.length; i++) {
+       var lettersUp = ((wordInput[i])[0]).toUpperCase();
+       console.log(((wordInput[i])[0]));
+       wordInput[i] = wordInput[i].replace((wordInput[i])[0], lettersUp);
+   }
+   return console.log(wordInput.join(" "));
+}
+
+
+
+
+
+
+
+
+
+7-
+
+
+
+
+function subcractArray (i,j){
+   for (let i = 0; i < array1.length; i++){
+       for (let j = 0; j < array2.length; j++){
+           if (array2[j] === array1[i]) {
+               array1.splice(i,1)
+               console.log(array1)
+           }
+       }
+   }
+   return array1
+}
+let array1 = [1,2,4,6];
+let array2 = [2,6]
+console.log(subcractArray(array1, array2));
+
+
+
+
+
+
